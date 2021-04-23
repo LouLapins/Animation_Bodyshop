@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/CSSRulePlugin.min.js"></script>
     <script src="/js/main.js"></script>
     <script src="https://kit.fontawesome.com/d55285fa64.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <title>Document</title>
 </head>
@@ -15,39 +18,48 @@
 <body>
 
     <section id="products">
-        <button id="prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
-        <div id="carousel-container">
-            <div id="img-carousel">
-                <img src="/img/product-gel-pump.jpg" class="product-img" id="last-clone" alt="Bodyshop Lemon Hand Sanitizing Gel Large">
-                <img src="/img/product-gel.jpg" class="product-img" alt="Bodyshop Lemon Hand Sanitizing Gel Small">
-                <img src="/img/product-soap.jpg" class="product-img" alt="Bodyshop Lemon Purifying Hand Wash">
-                <img src="/img/product-lotion.jpg" class="product-img" alt="Bodyshop Lemon Protecting Hand and Body Lotion">
-                <img src="/img/product-gel-pump.jpg" class="product-img" alt="Bodyshop Lemon Hand Sanitizing Gel Large">
-                <img src="/img/product-gel.jpg" class="product-img" id="first-clone" alt="Bodyshop Lemon Hand Sanitizing Gel Small">
+        <div id="product-images">
+            <button id="prev-btn" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+            <div id="carousel-container">
+                <div id="img-carousel">
+                    <img src="/img/product-gel-pump.jpg" class="product-img" id="last-clone" alt="Bodyshop Lemon Hand Sanitizing Gel Large">
+                    <img src="/img/product-gel.jpg" class="product-img" alt="Bodyshop Lemon Hand Sanitizing Gel Small">
+                    <img src="/img/product-soap.jpg" class="product-img" alt="Bodyshop Lemon Purifying Hand Wash">
+                    <img src="/img/product-lotion.jpg" class="product-img" alt="Bodyshop Lemon Protecting Hand and Body Lotion">
+                    <img src="/img/product-gel-pump.jpg" class="product-img" alt="Bodyshop Lemon Hand Sanitizing Gel Large">
+                    <img src="/img/product-gel.jpg" class="product-img" id="first-clone" alt="Bodyshop Lemon Hand Sanitizing Gel Small">
+                </div>
             </div>
+            <button id="next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
         </div>
-        <button id="next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
-        <img class="leaves">
-        <img class="leaves">
-        <a href="#" id="learn-btn"></a>
-        <a href="#" id="shop-btn"></a>
-        <img id="logo-full">
-        <a href="#" class="socials-btn"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="socials-btn"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="socials-btn"><i class="fab fa-instagram"></i></a>
+        <div id="leaves-container">
+            <img class="leaves" id="leaves-left" src="/img/leaves.svg" alt="Illustration of leaves">
+            <img class="leaves" id="leaves-right" src="/img/leaves.svg" alt="Illustration of leaves">
+        </div>
+        <div id="buttons-container">
+            <a href="#" id="learn-btn">Learn more</a>
+            <a href="#" id="shop-btn">Shop now</a>
+        </div>
+        <img id="logo-full" src="/img/bodyshop-logo.svg" alt="The Bodyshop Logo">
+        <div id="socials-container">
+            <a href="#" class="socials-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="socials-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="socials-btn"><i class="fab fa-instagram"></i></a>
+        </div>
     </section>
 
-    <section id="main-txt">
+    <section id="copy-txt">
         <img id="lemon-img-wide" src="/img/lemons-wide.jpg" alt="Lemons on lemon tree">
-        <div>
-            <h1>Lemon cleansing power</h1>
+        <div id="txt-block-wide">
+            <h1>Lemon</h1>
+            <h2>Cleansing power</h2>
             <p>Feel clean, confident and zesty with our purifying and protecting Lemon range.</p>
             <p>It’s vegan, made with lemon essential oil and combines steps that have either antibacterial, intense cleansing or protecting care properties.</p>
         </div>
         <div id="img-row">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img class="img-row-img" src="/img/row-lotion.jpg" alt="Hand and Body Lotion">
+            <img class="img-row-img" src="/img/row-hands.jpg" alt="Soap lathering on hands">
+            <img class="img-row-img" src="/img/row-bath.jpg" alt="Body Wash on edge of bath tub">
         </div>
     </section>
 
