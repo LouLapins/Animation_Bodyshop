@@ -1,0 +1,49 @@
+#copy-txt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    #lemon-img-wide,
+    #txt-block-wide {
+        margin-bottom: 13px;
+    }
+    #lemon-img-wide {
+        width: 100%;
+    }
+    #txt-block-wide {
+        width: 100%;
+        height: 33vh;
+        background-color: $main-clr;
+        color: $white;
+        @include flexCenter(column);
+        h1 {
+            font-size: 64px;
+            font-family: $heading-font;
+            font-weight: 400;
+            margin: 0;
+            line-height: 0.6;
+            align-self: flex-start;
+            margin-left: 90px;
+        }
+        h2 {
+            width: 85%;
+            font-size: 72px;
+            font-weight: 400;
+            font-family: $heading-font;
+            text-align: center;
+            border-bottom: 1px solid $white;
+        }
+        p {
+            width: 85%;
+            margin: 10px 0;
+        }
+    }
+    #img-row {
+        display: flex;
+        width: 100%;
+        .img-row-img {
+            width: 33.3%;
+        }
+    }
+}

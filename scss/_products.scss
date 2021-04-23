@@ -1,0 +1,33 @@
+#products {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    #carousel-container {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: #F5F9EC;
+        #img-carousel {
+            display: flex;
+            width: 100%;
+            height: 370px;
+        }
+    }
+    #leaves-container {
+        .leaves {
+            width: 170px;
+        }
+        #leaves-right {
+            transform: scaleX(-1);
+        }
+    }
+    #logo-full {
+        width: 30%;
+    }
+    #socials-container {
+        align-self: flex-end;
+    }
+}

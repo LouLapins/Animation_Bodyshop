@@ -8,6 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.js"></script>
     <script src="/js/main.js"></script>
     <script src="https://kit.fontawesome.com/d55285fa64.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.min.css">
     <title>Document</title>
 </head>
@@ -27,27 +29,32 @@
             </div>
         </div>
         <button id="next-btn" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
-        <img class="leaves">
-        <img class="leaves">
+        <div id="leaves-container">
+            <img class="leaves" src="/img/leaves.svg" alt="Illustration of leaves">
+            <img class="leaves" id="leaves-right" src="/img/leaves.svg" alt="Illustration of leaves">
+        </div>
         <a href="#" id="learn-btn"></a>
         <a href="#" id="shop-btn"></a>
-        <img id="logo-full">
-        <a href="#" class="socials-btn"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="socials-btn"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="socials-btn"><i class="fab fa-instagram"></i></a>
+        <img id="logo-full" src="/img/bodyshop-logo.svg" alt="The Bodyshop Logo">
+        <div id="socials-container">
+            <a href="#" class="socials-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="socials-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="socials-btn"><i class="fab fa-instagram"></i></a>
+        </div>
     </section>
 
-    <section id="main-txt">
+    <section id="copy-txt">
         <img id="lemon-img-wide" src="/img/lemons-wide.jpg" alt="Lemons on lemon tree">
-        <div>
-            <h1>Lemon cleansing power</h1>
+        <div id="txt-block-wide">
+            <h1>Lemon</h1>
+            <h2>Cleansing power</h2>
             <p>Feel clean, confident and zesty with our purifying and protecting Lemon range.</p>
             <p>It’s vegan, made with lemon essential oil and combines steps that have either antibacterial, intense cleansing or protecting care properties.</p>
         </div>
         <div id="img-row">
-            <img src="/img/row-lotion.jpg" alt="Hand and Body Lotion">
-            <img src="/img/row-hands.jpg" alt="Soap lathering on hands">
-            <img src="/img/row-bath.jpg" alt="Body Wash on edge of bath tub">
+            <img class="img-row-img" src="/img/row-lotion.jpg" alt="Hand and Body Lotion">
+            <img class="img-row-img" src="/img/row-hands.jpg" alt="Soap lathering on hands">
+            <img class="img-row-img" src="/img/row-bath.jpg" alt="Body Wash on edge of bath tub">
         </div>
     </section>
 
