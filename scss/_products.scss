@@ -1,33 +1,71 @@
 #products {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    #carousel-container {
-        width: 400px;
-        height: 400px;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: #F5F9EC;
-        #img-carousel {
-            display: flex;
-            width: 100%;
-            height: 370px;
+    #product-images {
+        @include flexCenter(row);
+        margin-top: 150px;
+        #carousel-container {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: $bg-clr-light;
+            border: 15px solid $bg-clr-light;
+            #img-carousel {
+                display: flex;
+                width: 100%;
+                height: 370px;
+            }
+        }
+        #prev-btn,
+        #next-btn {
+            @include arrowBtn;
+            position: relative;
+        }
+        #prev-btn {
+            left: 20px;
+        }
+        #next-btn {
+            right: 20px;
         }
     }
     #leaves-container {
+        height: 70px;
         .leaves {
             width: 170px;
+            position: relative;
+            bottom: 120px;
         }
         #leaves-right {
             transform: scaleX(-1);
+            margin: 0 0 0 200px;
+        }
+    }
+    #buttons-container {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        #learn-btn {
+            @include actionBtn($accent-clr);
+        }
+        #shop-btn {
+            @include actionBtn($bg-clr-light);
         }
     }
     #logo-full {
-        width: 30%;
+        width: 15%;
+        margin-top: 50px;
     }
     #socials-container {
-        align-self: flex-end;
+        align-self: flex-start;
+        margin: 0 20px;
+        .socials-btn {
+            font-size: 200%;
+            margin: 10px;
+        }
     }
 }

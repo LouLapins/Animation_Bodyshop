@@ -3,9 +3,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -15,15 +15,33 @@
           flex-direction: column;
 }
 
-#products #carousel-container {
+#products #product-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 150px;
+}
+
+#products #product-images #carousel-container {
   width: 400px;
   height: 400px;
   overflow: hidden;
   border-radius: 50%;
   background-color: #F5F9EC;
+  border: 15px solid #F5F9EC;
 }
 
-#products #carousel-container #img-carousel {
+#products #product-images #carousel-container #img-carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,22 +49,115 @@
   height: 370px;
 }
 
+#products #product-images #prev-btn,
+#products #product-images #next-btn {
+  background-color: #F4F9FF;
+  color: #00491E;
+  border-radius: 50%;
+  font-size: 120%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: relative;
+}
+
+#products #product-images #prev-btn {
+  left: 20px;
+}
+
+#products #product-images #next-btn {
+  right: 20px;
+}
+
+#products #leaves-container {
+  height: 70px;
+}
+
 #products #leaves-container .leaves {
   width: 170px;
+  position: relative;
+  bottom: 120px;
 }
 
 #products #leaves-container #leaves-right {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+  margin: 0 0 0 200px;
+}
+
+#products #buttons-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#products #buttons-container #learn-btn {
+  font-family: "Bebas Neue", cursive;
+  border: 4px solid #00491E;
+  width: 170px;
+  height: 70px;
+  background-color: #8DBF88;
+  border-radius: 50px;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#products #buttons-container #shop-btn {
+  font-family: "Bebas Neue", cursive;
+  border: 4px solid #00491E;
+  width: 170px;
+  height: 70px;
+  background-color: #F5F9EC;
+  border-radius: 50px;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #products #logo-full {
-  width: 30%;
+  width: 15%;
+  margin-top: 50px;
 }
 
 #products #socials-container {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 20px;
+}
+
+#products #socials-container .socials-btn {
+  font-size: 200%;
+  margin: 10px;
 }
 
 #copy-txt {
@@ -107,7 +218,7 @@
 }
 
 #copy-txt #txt-block-wide h2 {
-  width: 85%;
+  width: 90%;
   font-size: 72px;
   font-weight: 400;
   font-family: "Bebas Neue", cursive;
@@ -116,7 +227,7 @@
 }
 
 #copy-txt #txt-block-wide p {
-  width: 85%;
+  width: 90%;
   margin: 10px 0;
 }
 
@@ -144,5 +255,11 @@ body {
   display: flex;
   background-color: #EBF2DC;
   font-family: "Work Sans", sans-serif;
+  color: #00491E;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
 }
 /*# sourceMappingURL=main.css.map */

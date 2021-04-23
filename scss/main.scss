@@ -12,4 +12,9 @@ body {
     display: flex;
     background-color: $bg-clr;
     font-family: $body-font;
+    color: $main-clr;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
