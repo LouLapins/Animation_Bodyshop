@@ -58,7 +58,13 @@
   width: 50px;
   height: 50px;
   border: none;
+  z-index: 100;
   position: relative;
+}
+
+#products #product-images #prev-btn:hover,
+#products #product-images #next-btn:hover {
+  background-color: white;
 }
 
 #products #product-images #prev-btn {
@@ -121,6 +127,10 @@
           flex-direction: row;
 }
 
+#products #buttons-container #learn-btn:hover {
+  background-color: #F5F9EC;
+}
+
 #products #buttons-container #shop-btn {
   font-family: "Bebas Neue", cursive;
   border: 4px solid #00491E;
@@ -142,6 +152,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#products #buttons-container #shop-btn:hover {
+  background-color: #8DBF88;
 }
 
 #products #logo-full {

@@ -2,12 +2,18 @@ window.onload = function() {
 
     slideCarousel();
 
+    moveLeaves();
+
+}
+
+function moveLeaves() {
     const productImages = document.querySelector('#product-images');
 
     productImages.addEventListener("mouseover", () => {
 
         gsap.to("#leaves-left", { duration: 3, x: -20, y: -20, ease: "elastic" });
         gsap.to("#leaves-right", { duration: 3, x: 20, y: -20, ease: "elastic" });
+
     });
 
 }

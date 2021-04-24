@@ -51,9 +51,15 @@
         justify-content: space-between;
         #learn-btn {
             @include actionBtn($accent-clr);
+            &:hover {
+                background-color: $bg-clr-light;
+            }
         }
         #shop-btn {
             @include actionBtn($bg-clr-light);
+            &:hover {
+                background-color: $accent-clr;
+            }
         }
     }
     #logo-full {
