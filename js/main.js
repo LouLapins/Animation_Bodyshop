@@ -2,14 +2,16 @@ window.onload = function() {
 
     slideCarousel();
 
-    moveLeaves();
+    moveLeaves(document.querySelector('#product-images'));
+    moveLeaves(document.querySelector('#lemon-img-wide'));
+    moveLeaves(document.querySelector('#img-row'));
 
 }
 
-function moveLeaves() {
-    const productImages = document.querySelector('#product-images');
 
-    productImages.addEventListener("mouseover", () => {
+function moveLeaves(element) {
+
+    element.addEventListener("mouseover", () => {
 
         gsap.to("#leaves-left", { duration: 3, x: -20, y: -20, ease: "elastic" });
         gsap.to("#leaves-right", { duration: 3, x: 20, y: -20, ease: "elastic" });
