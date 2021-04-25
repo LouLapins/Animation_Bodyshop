@@ -1,15 +1,27 @@
 window.onload = function() {
 
-    slideCarousel();
+    fallInBlocks();
 
-    moveLeaves(document.querySelector('#product-images'));
-    moveLeaves(document.querySelector('#lemon-img-wide'));
-    moveLeaves(document.querySelector('#img-row'));
+    fadeInProducts();
+
+    handleHover(document.querySelector('#product-images'));
+    handleHover(document.querySelector('#lemon-img-wide'));
+    handleHover(document.querySelector('#img-row'));
+
+    slideCarousel();
 
 }
 
+function fallInBlocks() {
+    gsap.from('#copy-txt', { duration: 2, y: '-100%', ease: 'power2' });
 
-function moveLeaves(element) {
+}
+
+function fadeInProducts() {
+    gsap.from('.fade-in', { duration: 1, opacity: 0, delay: 2, stagger: .5 });
+}
+
+function handleHover(element) {
 
     element.addEventListener("mouseover", () => {
 
