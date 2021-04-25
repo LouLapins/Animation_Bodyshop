@@ -191,13 +191,11 @@
           align-items: center;
 }
 
-#copy-txt #lemon-img-wide,
-#copy-txt #txt-block-wide {
-  margin-bottom: 13px;
-}
-
 #copy-txt #lemon-img-wide {
   width: 100%;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
 }
 
 #copy-txt #txt-block-wide {
@@ -218,6 +216,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 10px solid white;
 }
 
 #copy-txt #txt-block-wide h1 {
@@ -237,7 +236,7 @@
   font-weight: 400;
   font-family: "Bebas Neue", cursive;
   text-align: center;
-  border-bottom: 1px solid #F4F9FF;
+  border-bottom: 1px solid white;
 }
 
 #copy-txt #txt-block-wide p {
@@ -250,6 +249,9 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  border-bottom: 10px solid white;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
 }
 
 #copy-txt #img-row .img-row-img {

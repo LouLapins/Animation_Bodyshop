@@ -4,12 +4,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    #lemon-img-wide,
-    #txt-block-wide {
-        margin-bottom: 13px;
-    }
     #lemon-img-wide {
         width: 100%;
+        border-top: 10px solid white;
+        border-left: 10px solid white;
+        border-right: 10px solid white;
     }
     #txt-block-wide {
         width: 100%;
@@ -17,6 +16,7 @@
         background-color: $main-clr;
         color: $white;
         @include flexCenter(column);
+        border: 10px solid white;
         h1 {
             font-size: 64px;
             font-family: $heading-font;
@@ -32,7 +32,7 @@
             font-weight: 400;
             font-family: $heading-font;
             text-align: center;
-            border-bottom: 1px solid $white;
+            border-bottom: 1px solid white;
         }
         p {
             width: 90%;
@@ -42,6 +42,9 @@
     #img-row {
         display: flex;
         width: 100%;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        border-right: 10px solid white;
         .img-row-img {
             width: 33.3%;
         }
